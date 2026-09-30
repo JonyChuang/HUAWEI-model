@@ -1,0 +1,2 @@
+﻿task,dataset,n,primary_metric,primary_value,secondary_metric,secondary_value,evidence_role
+mixture rank transfer,matched 1M->60M,256,Spearman,0.9657980945296404,Pearson,0.9670963309637957,matched structural transfer validation

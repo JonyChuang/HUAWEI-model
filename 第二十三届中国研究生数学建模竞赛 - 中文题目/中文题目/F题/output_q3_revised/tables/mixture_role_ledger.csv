@@ -1,0 +1,5 @@
+﻿p_name,role,executable,Q0_A,psi_p0,source
+p_risk,risk-controlled recommendation,True,0.6223445231685716,1.0370199318847233,Q1.mpr_recipe_shares.csv:MPR 风险 p_risk; Q2.mixture_bridge.p_risk
+p_safe,support-constrained proxy recommendation,True,0.6171222986562728,1.0214385226168814,Q1.mpr_recipe_shares.csv:凸包保守 p_safe
+p_measured,best observed 1M training recipe,True,0.605802864982496,1.0669552524144983,Q1.mpr_recipe_shares.csv:训练集实测最佳
+p_ref,normalization reference / theoretical oracle,False,0.6180674651189247,1.0,Q2.mixture_bridge.p_ref

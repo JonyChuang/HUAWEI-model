@@ -1,0 +1,7 @@
+searching python... 
+Using python: D:\annocan\Anaconda\python.exe 
+Traceback (most recent call last):
+  File "D:\华为杯研究生建模资料\第二十三届中国研究生数学建模竞赛 - 中文题目\中文题目\F题\aggregate_detailed_results.py", line 37, in <module>
+    dirs = sorted(d for d in os.listdir(SRC) if os.path.isdir(os.path.join(SRC, d)))
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'D:\\华为杯研究生建模资料\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\F题\\detailed_results'
+EXIT CODE 1 

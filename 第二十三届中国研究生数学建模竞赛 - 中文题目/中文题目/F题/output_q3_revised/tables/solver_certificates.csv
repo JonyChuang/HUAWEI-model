@@ -1,0 +1,4 @@
+﻿C,p_star,regime,budget_resid,N_KKT_logresid,N_stationarity_status,Q_KKT_violation,certificate,support_status,extrapolation_flag
+1e+19,p_safe,R1,0.0,5.835550221201247e-16,interior,1.4432899320127035e-15,1.4432899320127035e-15,interpolation,False
+1e+22,p_safe,R2,0.0,4.150660831232934e-16,interior,0.0,4.150660831232934e-16,interpolation,False
+1e+24,p_safe,R2,1.1102230246251565e-16,8.124107207797171e-16,interior,0.0,8.124107207797171e-16,far_extrapolation,True

@@ -1,0 +1,24 @@
+{
+  "RANDOM_STATE": 42,
+  "quality_model": "Q_res (entropy-CRITIC + geometric conflict resolution)",
+  "quality_power_mean_p": 0.0,
+  "quality_power_mean_epsilon": 0.01,
+  "quality_conflict_tau": 0.5,
+  "quality_pair_conflict_rule": "strict tails with frozen A1 cutpoints; cutpoint ties are neutral",
+  "quality_mapping_kappa": {
+    "direct": 1.0,
+    "near_direct": 0.8,
+    "inferred": 0.5
+  },
+  "SCM_epsilon": 0.0001,
+  "SCM_alpha": 1.0,
+  "SCI_bootstrap_B": 200,
+  "SCI_inclusion_cutoff": 0.7,
+  "SCI_sign_cutoff": 0.8,
+  "SCI_selected_n": 1,
+  "SCI_Ridge_alpha": 1.0,
+  "MPR_residual_alpha": 1.0,
+  "risk_rho": 0.25,
+  "risk_lambda_uncertainty": 0.1,
+  "risk_CVaR_quantile": 0.8
+}

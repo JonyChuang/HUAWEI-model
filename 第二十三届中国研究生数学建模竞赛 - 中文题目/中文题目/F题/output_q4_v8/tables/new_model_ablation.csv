@@ -1,0 +1,11 @@
+﻿类型,模型,OOF_MAE,最终选择,最终权重,Persistence_MAE,skill_vs_persistence,validated_horizons,evidence_status,可用期限平均MAE,最少folds
+pretrained,EARF,18.434153845245117,False,0.0,0.0,-18.434153845245117,3,insufficient_frontier_refresh_evidence,18.43415384524512,3.0
+pretrained,Compute-Q90,3.0942821843637223,True,1.0,0.0,-3.0942821843637223,3,insufficient_frontier_refresh_evidence,3.0942821843637227,3.0
+pretrained,DATF-Q90,5.0350010736732855,False,0.0,0.0,-5.0350010736732855,3,insufficient_frontier_refresh_evidence,5.0350010736732855,3.0
+pretrained,NonNeg-Stack,3.0942821843639337,False,0.0,0.0,-3.0942821843639337,3,insufficient_frontier_refresh_evidence,,
+pretrained,Persistence,0.0,False,0.0,0.0,0.0,3,benchmark_only,0.0,3.0
+chat/finetuned,EARF,0.0,True,1.0,0.0,0.0,3,insufficient_frontier_refresh_evidence,0.0,3.0
+chat/finetuned,Compute-Q90,3.2249901859908214,False,0.0,0.0,-3.2249901859908214,3,insufficient_frontier_refresh_evidence,3.2249901859908214,3.0
+chat/finetuned,DATF-Q90,5.147903318366808,False,0.0,0.0,-5.147903318366808,3,insufficient_frontier_refresh_evidence,5.147903318366808,3.0
+chat/finetuned,NonNeg-Stack,2.8421709430404004e-14,False,0.0,0.0,-2.8421709430404004e-14,3,insufficient_frontier_refresh_evidence,,
+chat/finetuned,Persistence,0.0,False,0.0,0.0,0.0,3,benchmark_only,0.0,3.0

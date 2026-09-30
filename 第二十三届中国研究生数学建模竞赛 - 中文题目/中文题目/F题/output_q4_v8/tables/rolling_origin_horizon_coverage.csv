@@ -1,0 +1,3 @@
+﻿类型,h_target,folds,refresh_folds,eligible_for_selection
+chat/finetuned,3,3,0,True
+pretrained,3,3,0,True

@@ -1,0 +1,17 @@
+{
+  "reference_excluded": true,
+  "quality_neutrality": true,
+  "p_rob_alias_removed": true,
+  "uncertainty_scope": "quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported",
+  "full_scaling_scenarios_available": false,
+  "executable_roles": [
+    "p_risk",
+    "p_safe",
+    "p_measured"
+  ],
+  "reference_role": "normalization reference / theoretical oracle",
+  "allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q",
+  "gamma_p_identified": false,
+  "nominal_scale_form": "no-attenuation",
+  "support_basis": "B1 marginal N, D, 6ND range; moderate threshold=10x; not joint Q/p validation"
+}

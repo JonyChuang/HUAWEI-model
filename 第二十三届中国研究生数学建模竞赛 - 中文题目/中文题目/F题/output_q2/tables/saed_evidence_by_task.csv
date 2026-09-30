@@ -1,0 +1,4 @@
+﻿task,dataset,evidence_role,primary_metric,primary_value,secondary_metric,secondary_value
+quality absolute prediction,"B7 novel Q_B={0.5,0.7}",outer validation,RMSE,0.0467130579820804,R2,0.9789222845539253
+mixture rank transfer,matched 1M->60M,matched structural validation,Spearman,0.9657980945296404,Pearson,0.9670963309637957
+mixture amplitude transfer,matched 1M->60M,matched amplitude calibration,s60=b60/b1,0.7549905474036919,local gamma_p,0.06864347773751253

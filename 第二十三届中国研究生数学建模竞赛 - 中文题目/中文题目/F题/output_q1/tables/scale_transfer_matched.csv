@@ -1,0 +1,7 @@
+﻿left,right,matched_n,Spearman,right_is_extrapolated,note
+1M_test,60M_test,256,0.9657980945296404,False,same mixtures
+1M_test,1B_test,0,,False,NA: no common mixture vectors
+60M_test,1B_test,0,,False,NA: no common mixture vectors
+1M_train,10B_est,63,-0.739247311827957,True,same mixtures
+1M_train,70B_est,63,-0.813892089093702,True,same mixtures
+10B_est,70B_est,63,0.9900153609831028,True,same mixtures

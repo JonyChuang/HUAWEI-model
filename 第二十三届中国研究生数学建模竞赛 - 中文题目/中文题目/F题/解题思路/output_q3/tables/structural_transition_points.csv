@@ -1,0 +1,6 @@
+﻿成本函数,L_ctx,C_transition,from_p,from_regime,to_p,to_regime,定位机制
+指数型,4096,4.007363414498011e+18,p_risk,R0,p_risk,R1,KKT rho(Q0)=1
+指数型,4096,6.884809430694e+19,p_risk,R1,p_risk,R2,state bisection
+幂函数型,4096,1.701387136212579e+19,p_risk,R0,p_risk,R1,KKT rho(Q0)=1
+幂函数型,4096,1.9504953689252225e+19,p_risk,R1,p_risk,R2,state bisection
+对数渐进型,4096,5.122003931341444e+17,p_risk,R0,p_risk,R2,R0/R2 branch crossing

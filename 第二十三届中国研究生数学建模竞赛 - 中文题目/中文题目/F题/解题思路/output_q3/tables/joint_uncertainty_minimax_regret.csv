@@ -1,0 +1,7 @@
+﻿C,方法,p,Q,max_regret,mean_regret,uncertainty_scope
+1e+19,nominal executable,p_risk,0.7870699498680994,0.008334013906559344,0.004657557370832233,bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2
+1e+19,minimax-regret candidate,p_risk,0.7870699498681103,0.00833401390655764,0.004657557370832401,bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2
+1e+22,nominal executable,p_risk,1.0,6.171604493200799e-08,4.003210511098775e-08,bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2
+1e+22,minimax-regret candidate,p_risk,1.0,6.171604493200799e-08,4.003210511098775e-08,bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2
+1e+24,nominal executable,p_risk,1.0,2.720648173183306e-08,1.579678640499448e-08,bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2
+1e+24,minimax-regret candidate,p_risk,1.0,2.720648173183306e-08,1.579678640499448e-08,bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2

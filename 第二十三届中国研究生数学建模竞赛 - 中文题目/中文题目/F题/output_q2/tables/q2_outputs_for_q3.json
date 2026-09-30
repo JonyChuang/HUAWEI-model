@@ -1,0 +1,280 @@
+{
+  "model_name": "SAED-Modular-Separable",
+  "formula": "L=E+(A*N^(-alpha)+B*D^(-beta))*psi_Q(T(Q_A;c_Q))*psi_p(p,N)",
+  "identifiability_note": "Q and p are not jointly intervened in the attachments; multiplicative separability is the minimum identifiable bridge, not proof of no Q×p interaction.",
+  "classic_law": {
+    "E": 1.6898415521985561,
+    "A": 406.2976905591217,
+    "alpha": 0.33998695159942627,
+    "B": 409.78432009066887,
+    "beta": 0.2798930903706357
+  },
+  "H1": {
+    "claim": "cross-source transferability of the scale coordinate R(N,D), not universal identical exponents",
+    "cross_family_bootstrap_grouping": "B4 by family; B5 by publication source",
+    "exponent_uncertainty": {
+      "alpha_real": 0.2831456210347434,
+      "beta_real": 0.25208122878021694,
+      "alpha_ci": [
+        0.20715500250759056,
+        0.29275275976454385
+      ],
+      "beta_ci": [
+        0.18399848085197848,
+        0.28066392578555693
+      ],
+      "bootstrap_grouping": "B4 by family; B5 by publication source",
+      "kappa_ci_B6_cluster": [
+        0.4378199997599414,
+        0.48734321333541003
+      ],
+      "gamma_p_matched_ci95": [
+        0.057426009206131085,
+        0.07901326010056206
+      ],
+      "gamma_p_matched_median": 0.06911357050155476,
+      "quality_bridge_cq_scenarios": [
+        0.75,
+        1.0,
+        1.25
+      ]
+    }
+  },
+  "quality": {
+    "kappa": 0.45966131835818924,
+    "psi_Q_B": "1+kappa*(1-Q_B)",
+    "selection": "B6-only AIC + B6 cluster-bootstrap gamma test",
+    "outer_validation": "B7 novel Q_B={0.5,0.7} only",
+    "B7_novelQ_RMSE": 0.0467130579820804,
+    "B7_novelQ_R2": 0.9789222845539253,
+    "Q_bridge": {
+      "Q_A": "Q_res from Q1",
+      "Q_B": "B6/B7 Q_score",
+      "formula": "clip(1-c_Q*(1-Q_A),0,1)",
+      "nominal_c_Q": 1.0,
+      "sensitivity_c_Q": [
+        0.75,
+        1.25
+      ],
+      "Qbar_A_ref": 0.6180674651189247,
+      "Qbar_A_risk": 0.6223445231685716,
+      "Qbar_B_nominal_ref": 0.6180674651189247,
+      "Qbar_B_nominal_risk": 0.6223445231685716
+    }
+  },
+  "mixture_scale_transfer": {
+    "N0": 1000000.0,
+    "same_mixture_1M_60M_n": 256,
+    "same_mixture_Spearman": 0.9657980945296404,
+    "b_1M": 3.9046883025854595,
+    "b_60M": 2.9480027590097886,
+    "s60": 0.7549905474036919,
+    "gamma_p_local": 0.06864347773751253,
+    "gamma_p_matched_bootstrap_2p5_50_97p5": [
+      0.057426009206131085,
+      0.06911357050155476,
+      0.07901326010056206
+    ],
+    "psi_p": "1+(N/N0)^(-gamma_p)*(L_mix(p)/L_mix(p_ref)-1)",
+    "scope_note": "gamma_p is directly identified only on matched 1M->60M recipes; use above 60M is extrapolation."
+  },
+  "mixture_bridge": {
+    "domain_order": [
+      "arxiv",
+      "freelaw",
+      "nih_exporter",
+      "pubmed_central",
+      "wikipedia_en",
+      "dm_mathematics",
+      "github",
+      "philpapers",
+      "stackexchange",
+      "enron_emails",
+      "gutenberg_pg_19",
+      "pile_cc",
+      "ubuntu_irc",
+      "europarl",
+      "hackernews",
+      "pubmed_abstracts",
+      "uspto_backgrounds"
+    ],
+    "intercept": 3.0947791322939935,
+    "epsilon": 0.001,
+    "a_i": {
+      "arxiv": -0.0301444623509964,
+      "freelaw": -0.0278795451772427,
+      "nih_exporter": -0.004929432097395129,
+      "pubmed_central": -0.03806979364231345,
+      "wikipedia_en": -0.02965659489532736,
+      "dm_mathematics": -0.055319169522700246,
+      "github": -0.032099980835658314,
+      "philpapers": -0.007742249894317987,
+      "stackexchange": -0.05616823061900157,
+      "enron_emails": -0.008565720056882904,
+      "gutenberg_pg_19": -0.01422785325905147,
+      "pile_cc": -0.04833127303281255,
+      "ubuntu_irc": -0.04654359247422881,
+      "europarl": -8.6808271573602e-05,
+      "hackernews": -0.020803657597573556,
+      "pubmed_abstracts": -0.022871299870733743,
+      "uspto_backgrounds": -0.02245096146604269
+    },
+    "L_ref": 4.304983907991298,
+    "p_ref": {
+      "arxiv": 0.06475037095986289,
+      "freelaw": 0.05981018849338915,
+      "nih_exporter": 0.009751957863812138,
+      "pubmed_central": 0.08203691156278994,
+      "wikipedia_en": 0.06368624628528817,
+      "dm_mathematics": 0.11966083232659998,
+      "github": 0.06901570050159676,
+      "philpapers": 0.015887207895367902,
+      "stackexchange": 0.12151278381936079,
+      "enron_emails": 0.017683341063463108,
+      "gutenberg_pg_19": 0.030033448825608478,
+      "pile_cc": 0.10441900180099922,
+      "ubuntu_irc": 0.1005197562773606,
+      "europarl": 0.0,
+      "hackernews": 0.04437643393454713,
+      "pubmed_abstracts": 0.04888632516729233,
+      "uspto_backgrounds": 0.04796949322266153
+    },
+    "p_risk": {
+      "arxiv": 0.05867673081016285,
+      "freelaw": 0.08196980756951144,
+      "nih_exporter": 0.0006822875675600332,
+      "pubmed_central": 0.07570928432607231,
+      "wikipedia_en": 0.03550039351423682,
+      "dm_mathematics": 0.018505163243160365,
+      "github": 0.022859411891959704,
+      "philpapers": 0.0346092151348413,
+      "stackexchange": 0.08219222053964395,
+      "enron_emails": 0.00031771243243996686,
+      "gutenberg_pg_19": 0.039714054054995854,
+      "pile_cc": 0.2393892108082114,
+      "ubuntu_irc": 0.04598411675628209,
+      "europarl": 0.006822875675600332,
+      "hackernews": 0.03529705945979851,
+      "pubmed_abstracts": 0.07680777946035605,
+      "uspto_backgrounds": 0.144962676755167
+    },
+    "stable_SCI_interactions": [
+      "github × stackexchange"
+    ],
+    "interaction_evidence": [
+      {
+        "域i": "pubmed_central",
+        "域k": "hackernews",
+        "b_ik": -0.0025358119,
+        "relation": "complement/synergy candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "wikipedia_en",
+        "域k": "enron_emails",
+        "b_ik": -0.0021598694,
+        "relation": "complement/synergy candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "philpapers",
+        "域k": "pile_cc",
+        "b_ik": -0.0021398134,
+        "relation": "complement/synergy candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "ubuntu_irc",
+        "域k": "pubmed_abstracts",
+        "b_ik": -0.0019560702,
+        "relation": "complement/synergy candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "freelaw",
+        "域k": "dm_mathematics",
+        "b_ik": -0.0019090414,
+        "relation": "complement/synergy candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "nih_exporter",
+        "域k": "philpapers",
+        "b_ik": -0.0017085563,
+        "relation": "complement/synergy candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "wikipedia_en",
+        "域k": "pile_cc",
+        "b_ik": 0.0046947265,
+        "relation": "substitute/antagonism candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "pubmed_central",
+        "域k": "pubmed_abstracts",
+        "b_ik": 0.004883942,
+        "relation": "substitute/antagonism candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "enron_emails",
+        "域k": "pile_cc",
+        "b_ik": 0.0050060221,
+        "relation": "substitute/antagonism candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "stackexchange",
+        "域k": "pile_cc",
+        "b_ik": 0.0057657781,
+        "relation": "substitute/antagonism candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "arxiv",
+        "域k": "stackexchange",
+        "b_ik": 0.0058552634,
+        "relation": "substitute/antagonism candidate",
+        "stable_SCI_pair": false
+      },
+      {
+        "域i": "github",
+        "域k": "stackexchange",
+        "b_ik": 0.0110717522,
+        "relation": "substitute/antagonism candidate",
+        "stable_SCI_pair": true
+      }
+    ]
+  },
+  "axis_equivalent_resources": {
+    "N_axis_equiv": "N*Phi^(-1/alpha)",
+    "D_axis_equiv": "D*Phi^(-1/beta)",
+    "note": "separate one-axis loss-equivalent coordinates; not a unique same-compute configuration"
+  },
+  "domain_reallocation": {
+    "formula": "Delta_(i<-k)=dL/dp_i-dL/dp_k under dp_i=+delta, dp_k=-delta",
+    "file": "saed_pairwise_reallocation_effect_uniform.csv"
+  },
+  "quality_parameter_substitution": {
+    "condition": "when gamma_p>=0: target_loss > limiting_loss and dL/dN<0 imply a unique finite root",
+    "reverse_equivalence_note": "low-quality required-N multiplier is solved separately; it is not defined as reciprocal of the high-quality reduction factor"
+  },
+  "evidence_table": "saed_evidence_by_task.csv",
+  "sensitivity_file": "sensitivity.csv",
+  "cost_functions_appendixB": {
+    "exp": {
+      "gamma": 10000000.0,
+      "lambda": 6.0
+    },
+    "power": {
+      "gamma": 5000000000.0,
+      "lambda": 4.0
+    },
+    "log": {
+      "gamma": 2000000000.0,
+      "lambda": 10.0
+    }
+  }
+}

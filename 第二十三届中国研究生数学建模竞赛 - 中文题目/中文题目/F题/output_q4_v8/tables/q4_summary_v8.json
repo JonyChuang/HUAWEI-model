@@ -1,0 +1,590 @@
+{
+ "criteria": {
+  "composite": "C1 Average; C8 S_C8 validation",
+  "time_axis": "submission for observed record; publication for technology clock; lag used as DATF diagnostic",
+  "forecast_origin": "2025-03-13"
+ },
+ "contribution": [
+  {
+   "类型": "pretrained",
+   "时期": "2021-23 → 2024-25",
+   "早期n": 24,
+   "晚期n": 36,
+   "早期q90前沿": 13.66510733406418,
+   "晚期q90前沿": 32.19365081752274,
+   "实际变化": 18.528543483458556,
+   "训练算力贡献": 4.654309360112357,
+   "非规模时间漂移贡献": 7.314451560767349,
+   "未解释项": 6.5597825625788495,
+   "训练算力贡献占实际%": 25.119672057695816,
+   "非规模时间漂移占实际%": 39.476667808764134,
+   "未解释项占实际%": 35.40366013354005,
+   "训练算力贡献95%CI": "[3.83, 7.58]",
+   "时间漂移贡献95%CI": "[3.82, 11.39]",
+   "未解释项95%CI": "[2.35, 8.02]",
+   "C0": 2.213804417738889e+22,
+   "C1": 2.3558830191671336e+23,
+   "t0": -13.963039014373717,
+   "t1": 0.75564681724846
+  },
+  {
+   "类型": "chat/finetuned",
+   "时期": "2021-23 → 2024-25",
+   "早期n": 5,
+   "晚期n": 17,
+   "早期q90前沿": 21.936746028404905,
+   "晚期q90前沿": 31.558074155110173,
+   "实际变化": 9.621328126705269,
+   "训练算力贡献": 3.564019475649001,
+   "非规模时间漂移贡献": 4.164785429251751,
+   "未解释项": 1.8925232218045167,
+   "训练算力贡献占实际%": 37.04290539428329,
+   "非规模时间漂移占实际%": 43.287011672451314,
+   "未解释项占实际%": 19.6700829332654,
+   "训练算力贡献95%CI": "[3.01, 6.30]",
+   "时间漂移贡献95%CI": "[2.19, 6.90]",
+   "未解释项95%CI": "[-1.90, 2.75]",
+   "C0": 7.79999999999998e+22,
+   "C1": 3.074400000000005e+23,
+   "t0": -6.965092402464066,
+   "t1": -0.6242299794661191
+  }
+ ],
+ "compute_models": [
+  {
+   "模型": "Compute-Q90",
+   "beta_C": 0.1286345491901865,
+   "非规模时间漂移/月": 0.03250813602216885,
+   "rho_lag": NaN,
+   "q90伪R2": 0.4326247248348132,
+   "等效算力年倍数_仅作解释": 20.75119581135439
+  },
+  {
+   "模型": "DATF-Q90",
+   "beta_C": 0.14314925420632268,
+   "非规模时间漂移/月": 0.06070109257267019,
+   "rho_lag": 0.02974084263057884,
+   "q90伪R2": 0.45986181538891646,
+   "等效算力年倍数_仅作解释": 162.14434266060442
+  }
+ ],
+ "changepoint": {
+  "year": 2024.5,
+  "G_recent": 0.12942201612906196,
+  "G_recent_ci": [
+   0.015155183542140335,
+   8.471100034641593
+  ],
+  "fit_cutoff": "2025-03-13",
+  "postcut_c4_audit_n": 94
+ },
+ "bridge": {
+  "theta_c5": [
+   -2.6414504456548347,
+   1.7520458202190892,
+   0.830853550434524
+  ],
+  "theta_c6_full": [
+   -2.6097706051586753,
+   1.7273748929197699,
+   0.8804718183008055
+  ],
+  "external_rmse": 8.96871544884948,
+  "external_mae": 7.3327123599144315,
+  "external_bias": 1.3853258819437078
+ },
+ "forecast_choice": {
+  "pretrained": "Compute-Q90",
+  "chat/finetuned": "EARF"
+ },
+ "forecast_weights": {
+  "pretrained": {
+   "EARF": 0.0,
+   "Compute-Q90": 1.0,
+   "DATF-Q90": 0.0
+  },
+  "chat/finetuned": {
+   "EARF": 1.0,
+   "Compute-Q90": 0.0,
+   "DATF-Q90": 0.0
+  }
+ },
+ "forecast_horizon_coverage": [
+  {
+   "类型": "chat/finetuned",
+   "h_target": 3,
+   "folds": 3,
+   "refresh_folds": 0,
+   "eligible_for_selection": true
+  },
+  {
+   "类型": "pretrained",
+   "h_target": 3,
+   "folds": 3,
+   "refresh_folds": 0,
+   "eligible_for_selection": true
+  }
+ ],
+ "forecast_evidence": {
+  "pretrained": {
+   "validated_horizons": [
+    3
+   ],
+   "oof_folds": 3,
+   "refresh_folds": 0,
+   "persistence_mae": 0.0,
+   "selected_oof_mae": 3.0942821843637223,
+   "skill_vs_persistence": -3.0942821843637223,
+   "status": "insufficient_frontier_refresh_evidence"
+  },
+  "chat/finetuned": {
+   "validated_horizons": [
+    3
+   ],
+   "oof_folds": 3,
+   "refresh_folds": 0,
+   "persistence_mae": 0.0,
+   "selected_oof_mae": 0.0,
+   "skill_vs_persistence": 0.0,
+   "status": "insufficient_frontier_refresh_evidence"
+  }
+ },
+ "multihorizon_calibration": {
+  "pretrained": {
+   "q_by_horizon": {
+    "3": 3.2760999720140944
+   },
+   "validated_horizons": [
+    3
+   ],
+   "oof_folds": 3,
+   "refresh_folds": 0,
+   "evidence_status": "insufficient_frontier_refresh_evidence",
+   "positive_frontier_step_median": 5.640027198319103,
+   "apply_refresh_floor": true,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  "chat/finetuned": {
+   "q_by_horizon": {
+    "3": 0.0
+   },
+   "validated_horizons": [
+    3
+   ],
+   "oof_folds": 3,
+   "refresh_folds": 0,
+   "evidence_status": "insufficient_frontier_refresh_evidence",
+   "positive_frontier_step_median": 6.267595001509392,
+   "apply_refresh_floor": true,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  }
+ },
+ "q3_interface": {
+  "gamma_p_identified": false,
+  "nominal_scale_form": "no-attenuation",
+  "gamma_p_nominal": 0.0,
+  "allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q",
+  "nonfar_budget_min": 1e+19,
+  "nonfar_budget_max": 1e+22
+ },
+ "forecast": [
+  {
+   "类型": "pretrained",
+   "最终模型": "Compute-Q90",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 12,
+   "中位数": 40.73314025891504,
+   "Bootstrap+情景 5%": 38.00796730514634,
+   "Bootstrap+情景 95%": 51.911783378370075,
+   "期限扩张经验下界": 38.00796730514634,
+   "期限扩张经验上界": 63.19183777500828,
+   "期限扩张q": 11.280054396638207,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": -3.0942821843637223,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "pretrained",
+   "最终模型": "Compute-Q90",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 24,
+   "中位数": 43.47020714858202,
+   "Bootstrap+情景 5%": 38.00796730514634,
+   "Bootstrap+情景 95%": 65.68535670143442,
+   "期限扩张经验下界": 38.00796730514634,
+   "期限扩张经验上界": 81.63776261346644,
+   "期限扩张q": 15.952405912032013,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": -3.0942821843637223,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "pretrained",
+   "最终模型": "Compute-Q90",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 12,
+   "中位数": 44.09682991061425,
+   "Bootstrap+情景 5%": 38.00796730514634,
+   "Bootstrap+情景 95%": 51.94337371517691,
+   "期限扩张经验下界": 38.00796730514634,
+   "期限扩张经验上界": 63.22342811181512,
+   "期限扩张q": 11.280054396638207,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": -3.0942821843637223,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "pretrained",
+   "最终模型": "Compute-Q90",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 24,
+   "中位数": 50.582906052807076,
+   "Bootstrap+情景 5%": 38.00796730514634,
+   "Bootstrap+情景 95%": 65.47858360378491,
+   "期限扩张经验下界": 38.00796730514634,
+   "期限扩张经验上界": 81.43098951581692,
+   "期限扩张q": 15.952405912032013,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": -3.0942821843637223,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "pretrained",
+   "最终模型": "Compute-Q90",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 12,
+   "中位数": 47.27898253162402,
+   "Bootstrap+情景 5%": 43.37939968999313,
+   "Bootstrap+情景 95%": 53.336254584652806,
+   "期限扩张经验下界": 38.00796730514634,
+   "期限扩张经验上界": 64.61630898129101,
+   "期限扩张q": 11.280054396638207,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": -3.0942821843637223,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "pretrained",
+   "最终模型": "Compute-Q90",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 24,
+   "中位数": 56.74157037040217,
+   "Bootstrap+情景 5%": 49.02342537510814,
+   "Bootstrap+情景 95%": 67.93331260775115,
+   "期限扩张经验下界": 38.00796730514634,
+   "期限扩张经验上界": 83.88571851978315,
+   "期限扩张q": 15.952405912032013,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": -3.0942821843637223,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "chat/finetuned",
+   "最终模型": "EARF",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 12,
+   "中位数": 51.23132307602696,
+   "Bootstrap+情景 5%": 51.23132307602696,
+   "Bootstrap+情景 95%": 51.23132307602696,
+   "期限扩张经验下界": 51.23132307602696,
+   "期限扩张经验上界": 63.766513079045744,
+   "期限扩张q": 12.535190003018784,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": 0.0,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "chat/finetuned",
+   "最终模型": "EARF",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 24,
+   "中位数": 51.23132307602696,
+   "Bootstrap+情景 5%": 51.23132307602696,
+   "Bootstrap+情景 95%": 51.23132307602696,
+   "期限扩张经验下界": 51.23132307602696,
+   "期限扩张经验上界": 68.95875878521977,
+   "期限扩张q": 17.727435709192804,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": 0.0,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "chat/finetuned",
+   "最终模型": "EARF",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 12,
+   "中位数": 51.23132307602696,
+   "Bootstrap+情景 5%": 51.23132307602696,
+   "Bootstrap+情景 95%": 51.23132307602696,
+   "期限扩张经验下界": 51.23132307602696,
+   "期限扩张经验上界": 63.766513079045744,
+   "期限扩张q": 12.535190003018784,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": 0.0,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "chat/finetuned",
+   "最终模型": "EARF",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 24,
+   "中位数": 51.23132307602696,
+   "Bootstrap+情景 5%": 51.23132307602696,
+   "Bootstrap+情景 95%": 51.23132307602696,
+   "期限扩张经验下界": 51.23132307602696,
+   "期限扩张经验上界": 68.95875878521977,
+   "期限扩张q": 17.727435709192804,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": 0.0,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "chat/finetuned",
+   "最终模型": "EARF",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 12,
+   "中位数": 51.23132307602696,
+   "Bootstrap+情景 5%": 51.23132307602696,
+   "Bootstrap+情景 95%": 51.23132307602696,
+   "期限扩张经验下界": 51.23132307602696,
+   "期限扩张经验上界": 63.766513079045744,
+   "期限扩张q": 12.535190003018784,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": 0.0,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  },
+  {
+   "类型": "chat/finetuned",
+   "最终模型": "EARF",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 24,
+   "中位数": 51.23132307602696,
+   "Bootstrap+情景 5%": 51.23132307602696,
+   "Bootstrap+情景 95%": 51.23132307602696,
+   "期限扩张经验下界": 51.23132307602696,
+   "期限扩张经验上界": 68.95875878521977,
+   "期限扩张q": 17.727435709192804,
+   "OOF实际验证期限": "3",
+   "预测证据状态": "insufficient_frontier_refresh_evidence",
+   "Persistence_MAE": 0.0,
+   "skill_vs_persistence": 0.0,
+   "interval_kind": "horizon_expanded_empirical_with_refresh_floor"
+  }
+ ],
+ "anchored_loss_crosscheck": [
+  {
+   "类型": "pretrained",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 12,
+   "当前前沿": 38.00796730514634,
+   "ΔL中位": -0.055633000518696796,
+   "锚定Loss通道前沿": 35.77981566657147,
+   "锚定Loss通道增量": -2.2281516385748645,
+   "最终模型总增量": 2.7251729537687055,
+   "两通道差额_仅作未解释项": 4.95332459234357,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 0.998,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "pretrained",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 24,
+   "当前前沿": 38.00796730514634,
+   "ΔL中位": -0.12704228913489013,
+   "锚定Loss通道前沿": 33.042566520386345,
+   "锚定Loss通道增量": -4.965400784759993,
+   "最终模型总增量": 5.4622398434356825,
+   "两通道差额_仅作未解释项": 10.427640628195675,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 0.8003333333333333,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "pretrained",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 12,
+   "当前前沿": 38.00796730514634,
+   "ΔL中位": -0.02553344377498079,
+   "锚定Loss通道前沿": 36.999712218988805,
+   "锚定Loss通道增量": -1.0082550861575328,
+   "最终模型总增量": 6.088862605467909,
+   "两通道差额_仅作未解释项": 7.097117691625442,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 1.0,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "pretrained",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 24,
+   "当前前沿": 38.00796730514634,
+   "ΔL中位": -0.054134741006171105,
+   "锚定Loss通道前沿": 35.88623235304219,
+   "锚定Loss通道增量": -2.1217349521041484,
+   "最终模型总增量": 12.574938747660738,
+   "两通道差额_仅作未解释项": 14.696673699764887,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 0.9976666666666667,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "pretrained",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 12,
+   "当前前沿": 38.00796730514634,
+   "ΔL中位": 0.0,
+   "锚定Loss通道前沿": 38.00796730514634,
+   "锚定Loss通道增量": 0.0,
+   "最终模型总增量": 9.27101522647768,
+   "两通道差额_仅作未解释项": 9.27101522647768,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 1.0,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "pretrained",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 24,
+   "当前前沿": 38.00796730514634,
+   "ΔL中位": 0.0,
+   "锚定Loss通道前沿": 38.00796730514634,
+   "锚定Loss通道增量": 0.0,
+   "最终模型总增量": 18.733603065255835,
+   "两通道差额_仅作未解释项": 18.733603065255835,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 1.0,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "chat/finetuned",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 12,
+   "当前前沿": 51.23132307602696,
+   "ΔL中位": -0.05524410498175092,
+   "锚定Loss通道前沿": 48.86665633456838,
+   "锚定Loss通道增量": -2.364666741458578,
+   "最终模型总增量": 0.0,
+   "两通道差额_仅作未解释项": 2.364666741458578,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 0.9973333333333333,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "chat/finetuned",
+   "情景": "延续（数据驱动最近段）",
+   "月数": 24,
+   "当前前沿": 51.23132307602696,
+   "ΔL中位": -0.12798044976692124,
+   "锚定Loss通道前沿": 45.717518531407414,
+   "锚定Loss通道增量": -5.513804544619546,
+   "最终模型总增量": 0.0,
+   "两通道差额_仅作未解释项": 5.513804544619546,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 0.7903333333333333,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "chat/finetuned",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 12,
+   "当前前沿": 51.23132307602696,
+   "ΔL中位": -0.024242236466011202,
+   "锚定Loss通道前沿": 50.18880893357225,
+   "锚定Loss通道增量": -1.0425141424547135,
+   "最终模型总增量": 0.0,
+   "两通道差额_仅作未解释项": 1.0425141424547135,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 1.0,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "chat/finetuned",
+   "情景": "放缓（对数增长率减半）",
+   "月数": 24,
+   "当前前沿": 51.23132307602696,
+   "ΔL中位": -0.05366285257252701,
+   "锚定Loss通道前沿": 48.9310945959609,
+   "锚定Loss通道增量": -2.3002284800660604,
+   "最终模型总增量": 0.0,
+   "两通道差额_仅作未解释项": 2.3002284800660604,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 0.9976666666666667,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "chat/finetuned",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 12,
+   "当前前沿": 51.23132307602696,
+   "ΔL中位": 0.0,
+   "锚定Loss通道前沿": 51.23132307602696,
+   "锚定Loss通道增量": 0.0,
+   "最终模型总增量": 0.0,
+   "两通道差额_仅作未解释项": 0.0,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 1.0,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  },
+  {
+   "类型": "chat/finetuned",
+   "情景": "停滞（前沿算力不增长）",
+   "月数": 24,
+   "当前前沿": 51.23132307602696,
+   "ΔL中位": 0.0,
+   "锚定Loss通道前沿": 51.23132307602696,
+   "锚定Loss通道增量": 0.0,
+   "最终模型总增量": 0.0,
+   "两通道差额_仅作未解释项": 0.0,
+   "Q3锚点支撑状态": "q3_conditional_extrapolation_high",
+   "Q3目标预算外推占比": 1.0,
+   "Q3_gamma_identified": false,
+   "Q3_nominal_scale_form": "no-attenuation",
+   "Q3_allocation_scope": "finite_executable_recipe_selection_with_conditional_N_D_Q"
+  }
+ ]
+}

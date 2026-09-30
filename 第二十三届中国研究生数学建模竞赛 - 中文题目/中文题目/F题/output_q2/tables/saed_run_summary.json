@@ -1,0 +1,21 @@
+{
+  "model": "SAED-Modular-Separable",
+  "core_innovation": "modular separable scaling + matched structure/amplitude transfer + quality-coordinate bridge + simplex reallocation + analytic substitution",
+  "quality_outer_RMSE": 0.0467130579820804,
+  "quality_outer_R2": 0.9789222845539253,
+  "same_mixture_1M_60M_Spearman": 0.9657980945296404,
+  "s60_matched": 0.7549905474036919,
+  "gamma_p_local": 0.06864347773751253,
+  "gamma_p_bootstrap": [
+    0.057426009206131085,
+    0.06911357050155476,
+    0.07901326010056206
+  ],
+  "kappa": 0.45966131835818924,
+  "Q_bridge_cq_scenarios": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "data_split": "B1 fit; B2/B3,B4/B5 structural validation; B6 quality selection/fit; B7 novel-Q outer validation; B8 boundary sensitivity; A6-A9 matched recipes only for H2 transfer; B9/B10 extrapolation"
+}

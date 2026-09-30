@@ -1,0 +1,6 @@
+parameter,estimate,bootstrap_ci_low,bootstrap_ci_high,leave_one_N_low,leave_one_N_high,uncertainty_label
+E,1.6898415521985561,1.6897634256803327,1.6900028818839365,1.6897971386195536,1.689861000597918,conditional N-trajectory cluster bootstrap; not external-family uncertainty
+A,406.2976905591217,405.8321486657343,407.2421797926181,,,conditional N-trajectory cluster bootstrap; not external-family uncertainty
+alpha,0.33998695159942627,0.3399200180235483,0.34012870904301384,0.3399722510357476,0.3400327954999624,conditional N-trajectory cluster bootstrap; not external-family uncertainty
+B,409.78432009066887,409.46329736677296,410.22177693697813,,,conditional N-trajectory cluster bootstrap; not external-family uncertainty
+beta,0.2798930903706357,0.27985284753373074,0.2799485183206702,0.27987528619851354,0.27990997579801563,conditional N-trajectory cluster bootstrap; not external-family uncertainty

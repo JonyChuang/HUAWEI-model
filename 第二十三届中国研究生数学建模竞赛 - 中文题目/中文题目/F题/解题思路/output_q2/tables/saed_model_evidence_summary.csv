@@ -1,0 +1,4 @@
+﻿evidence,type,reference,SAED,relative_improvement
+B7 novel-Q RMSE,outer validation,0.0467130579820804,0.0467130579820804,0.0
+Q1 scale log-CV RMSE,amplitude calibration,0.4714408189728244,0.28144871565184026,0.40300308262432405
+1M->60M same-mixture Spearman,structural transfer validation,,0.9657980945296404,

@@ -1,0 +1,14 @@
+{
+  "selected_model": "M0",
+  "quality_gain_validation_fraction": 0.0005489780119151414,
+  "quality_delta_train_ci95": [
+    -0.05119789168175592,
+    0.04147860926935254
+  ],
+  "lambda_sci": 0.0,
+  "lambda_reason": "no numeric SCI coefficient in final Q1 handoff and no p in B6/B7",
+  "family_selected": "independent",
+  "quality_validation": "B6 known levels to B7 novel levels, semi-synthetic",
+  "quality_coordinate": "Q_res",
+  "Q0_policy": "Qbar(p_risk)"
+}

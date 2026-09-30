@@ -1,0 +1,11 @@
+{
+  "reference_excluded": true,
+  "quality_neutrality": true,
+  "p_rob_alias_removed": true,
+  "uncertainty_scope": "bridge_joint_box_only__scaling_scenarios_not_exported_by_Q2",
+  "full_scaling_scenarios_available": false,
+  "executable_roles": [
+    "p_risk"
+  ],
+  "reference_role": "normalization reference / theoretical oracle"
+}

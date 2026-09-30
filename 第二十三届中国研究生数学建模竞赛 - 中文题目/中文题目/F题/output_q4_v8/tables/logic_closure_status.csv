@@ -1,0 +1,6 @@
+﻿模块,当前方法,验证证据
+规模—非规模贡献,C4 Training Compute 的 Compute-Q90 Shapley + 未解释项,所有拟合均截断于 FORECAST_ORIGIN；截止后 C4 仅事后审计
+Loss–Benchmark,异方差自适应 Logistic；C5校准→C6新增外层验证→C6全量重估,"C6新增 RMSE=8.97, MAE=7.33"
+预测器 pretrained,Compute-Q90,有效期限=[3]；folds=3；refresh=0；selected MAE=3.094；Persistence MAE=0.000；status=insufficient_frontier_refresh_evidence
+预测器 chat,EARF,有效期限=[3]；folds=3；refresh=0；selected MAE=0.000；Persistence MAE=0.000；status=insufficient_frontier_refresh_evidence
+Q3→Q4 接口,anchored ΔL* → ΔS,只用 Q3 非 far-extrapolation 预算点连续化；超出范围显式标记条件外推

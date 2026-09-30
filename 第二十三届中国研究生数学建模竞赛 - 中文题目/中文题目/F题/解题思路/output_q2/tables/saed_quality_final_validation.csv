@@ -1,0 +1,2 @@
+﻿model,selected_on,kappa_B6,kappa_ci95_cluster_low,kappa_ci95_cluster_high,B7_novelQ_RMSE,B7_novelQ_R2,outer_validation
+H3_linear_multiplier,B6 AIC + gamma cluster-bootstrap,0.45966131835818924,0.4378199997599414,0.48734321333541003,0.0467130579820804,0.9789222845539253,"B7 novel Q={0.5,0.7} only"

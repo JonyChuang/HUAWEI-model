@@ -1,0 +1,7 @@
+﻿C,方法,p,Q,max_regret,mean_regret,uncertainty_scope
+1e+19,nominal executable,p_safe,0.7860528894380865,0.008580476486795349,0.004950437616279589,quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported
+1e+19,minimax-regret candidate,p_safe,0.7860528894428255,0.008580476486207451,0.0049504376162748664,quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported
+1e+22,nominal executable,p_safe,1.0,4.052678577309505e-06,1.2238102238704652e-06,quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported
+1e+22,minimax-regret candidate,p_safe,1.0,2.371965858594613e-06,1.5108864021824732e-06,quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported
+1e+24,nominal executable,p_safe,1.0,2.8399471136166847e-06,9.268935283355015e-07,quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported
+1e+24,minimax-regret candidate,p_safe,1.0,2.025883970300186e-06,1.2671394115061488e-06,quality_bridge_x_structural_scale_scenarios__full_scaling_not_exported

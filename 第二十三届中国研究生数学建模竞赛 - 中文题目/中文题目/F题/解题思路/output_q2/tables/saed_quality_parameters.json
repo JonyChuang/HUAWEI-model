@@ -1,0 +1,16 @@
+{
+  "selected_form": "F2  R (1 + k (1-Q)^g)",
+  "kappa": 0.45966131835818924,
+  "kappa_ci95_cluster": [
+    0.4378199997599414,
+    0.48734321333541003
+  ],
+  "gamma_free_B6": 0.9934554881507486,
+  "gamma_ci95_cluster_B6": [
+    0.9247768713840053,
+    1.078837809780852
+  ],
+  "B7_novelQ_RMSE": 0.0467130579820804,
+  "B7_novelQ_R2": 0.9789222845539253,
+  "protocol": "B6-only selection/fit; B7 novel Q outer validation only"
+}

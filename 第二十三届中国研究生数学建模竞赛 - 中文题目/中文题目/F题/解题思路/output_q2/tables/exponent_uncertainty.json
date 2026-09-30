@@ -1,0 +1,27 @@
+{
+  "alpha_real": 0.2831456210347434,
+  "beta_real": 0.25208122878021694,
+  "alpha_ci": [
+    0.19721124688959452,
+    0.2928320601408861
+  ],
+  "beta_ci": [
+    0.17908819962384798,
+    0.28009726792581285
+  ],
+  "bootstrap_grouping": "B4 by family; B5 by publication source",
+  "kappa_ci_B6_cluster": [
+    0.4378199997599414,
+    0.48734321333541003
+  ],
+  "gamma_p_matched_ci95": [
+    0.05742600920613098,
+    0.07901326010056206
+  ],
+  "gamma_p_matched_median": 0.06911357050155478,
+  "quality_bridge_cq_scenarios": [
+    0.75,
+    1.0,
+    1.25
+  ]
+}
